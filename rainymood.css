@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Marcellus SC", serif;
+  color: white;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pButton {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+input[type="range"] {
+  width: 200px;
+  -webkit-appearance: none;
+  /* background: rgb(95, 93, 93); */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  overflow: hidden;
+  height: 10px;
+  -webkit-appearance: none;
+  background: darkgray;
+  /* margin-top: -1px; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  overflow: visible;
+  width: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  cursor: pointer;
+  background: white;
+  box-shadow: -200px 0 0 200px rgb(58, 58, 58);
+  margin-top: -5px;
+  border-radius: 50%;
+}
+
+.fa-brands {
+  font-size: 3em;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.container {
+  z-index: 2;
+  position: relative;
+}
